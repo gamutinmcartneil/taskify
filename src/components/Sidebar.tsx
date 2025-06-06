@@ -1,8 +1,9 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import Link from "next/link";
-import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp, MdOutlineFormatListBulleted } from "react-icons/md";
+//  MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp,
+import { MdOutlineFormatListBulleted } from "react-icons/md";
 import { useSidebar } from '@/context/LayoutContext';
 
 
@@ -51,7 +52,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className='flex text-xs py-1 px-6 pt-1.5' style={{ alignItems: "flex-end" }}>Apps</li>
                                 <li>
-                                    <Link className='flex cursor-pointer font-normal relative px-6 py-2.5 no-underline transition-colors duration-75 ease-in-out'>
+                                    <Link href='' className='flex cursor-pointer font-normal relative px-6 py-2.5 no-underline transition-colors duration-75 ease-in-out'>
                                         <div className='self-center'><MdOutlineFormatListBulleted className='h-[18px] w-[18px] mr-3' /></div>
                                         <span className='align-middle'>E-Commerce</span>
 

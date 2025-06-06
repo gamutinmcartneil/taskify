@@ -5,7 +5,7 @@ import MessageList from "./MessageList";
 
 export default function Message() {
 
-    const [ismessageDropdown, setMessageDropdown] = useState(false);
+    const [ismessageDropdown] = useState(false);
 
     return (
         <>

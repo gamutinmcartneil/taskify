@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
-import { FiUser, FiClock } from "react-icons/fi";
+import { FiUser } from "react-icons/fi";
 
 export default function Profile() {
 
-    const [isProfileDropdown, setProfileDropdown] = useState(true);
+    const [isProfileDropdown] = useState(true);
 
     return (
         <>
