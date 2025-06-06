@@ -7,16 +7,16 @@ export default function Footer() {
                 <div className="col-6 text-start">
                     <ul className="list-inline flex gap-x-5">
                         <li className="">
-                            <a className="text-sm" href="#">Support</a>
+                            <a className="text-sm" href="#">Support</Link>
                         </li>
                         <li className="">
-                            <a className="text-sm" href="#">Help Center</a>
+                            <a className="text-sm" href="#">Help Center</Link>
                         </li>
                         <li className="">
-                            <a className="text-sm" href="#">Privacy</a>
+                            <a className="text-sm" href="#">Privacy</Link>
                         </li>
                         <li className="">
-                            <a className="text-sm" href="#">Terms of Service</a>
+                            <a className="text-sm" href="#">Terms of Service</Link>
                         </li>
                     </ul>
                 </div>

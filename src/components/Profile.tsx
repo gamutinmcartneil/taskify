@@ -35,9 +35,9 @@ export default function Profile() {
                           Analytics
                         </Link>
                         <div className="border-t border-[rgba(0,0,0,0.175)] h-0 my-2 opacity-100 overflow-hidden"></div>
-                        <a href="" className="block w-full bg-transparent border-0 rounded-none clear-both text-[#6c757d] font-normal px-6 py-[0.35rem] text-inherit whitespace-nowrap">Settings & Privacy</a>
-                        <a href="" className="block w-full bg-transparent border-0 rounded-none clear-both text-[#6c757d] font-normal px-6 py-[0.35rem] text-inherit whitespace-nowrap">Help</a>
-                        <a href="" className="block w-full bg-transparent border-0 rounded-none clear-both text-[#6c757d] font-normal px-6 py-[0.35rem] text-inherit whitespace-nowrap">Signout</a>
+                        <Link href="" className="block w-full bg-transparent border-0 rounded-none clear-both text-[#6c757d] font-normal px-6 py-[0.35rem] text-inherit whitespace-nowrap">Settings & Privacy</Link>
+                        <Link href="" className="block w-full bg-transparent border-0 rounded-none clear-both text-[#6c757d] font-normal px-6 py-[0.35rem] text-inherit whitespace-nowrap">Help</Link>
+                        <Link href="" className="block w-full bg-transparent border-0 rounded-none clear-both text-[#6c757d] font-normal px-6 py-[0.35rem] text-inherit whitespace-nowrap">Signout</Link>
                         {/* <Link href='' className="flex text-gray-800 mb-4 gap-2">
                           <FiClock className="size-5" />
                           <span className="text-base">Analytics</span>

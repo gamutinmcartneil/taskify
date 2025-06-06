@@ -26,7 +26,7 @@ export default function Message() {
                             <div className="font-medium p-3 text-center"><span className="relative">4 New Messages</span></div>
                             <div className={`flex flex-col rounded-[0.2rem] mb-0 pl-0`}>
                                 {/* <MessageList /> */}
-                                <a href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
+                                <Link href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
                                     <div className="flex flex-wrap mx-[12px] mt-0 flex-none w-1/6">
                                         <div>
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gNRChrnzLBNZ9pWKTKBeRdkV_e7kjo2k-aW33gO0R4NXrIApnxI18F0&s" alt="" className="h-auto max-w-full rounded-full"/>
@@ -37,8 +37,8 @@ export default function Message() {
                                         <div className="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
                                         <div className="text-muted small mt-1">15m ago</div>
                                     </div>
-                                </a>
-                                <a href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
+                                </Link>
+                                <Link href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
                                     <div className="flex flex-wrap mx-[12px] mt-0 flex-none w-1/6">
                                         <div>
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gNRChrnzLBNZ9pWKTKBeRdkV_e7kjo2k-aW33gO0R4NXrIApnxI18F0&s" alt="" className="h-auto max-w-full rounded-full"/>
@@ -49,8 +49,8 @@ export default function Message() {
                                         <div className="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
                                         <div className="text-muted small mt-1">15m ago</div>
                                     </div>
-                                </a>
-                                <a href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
+                                </Link>
+                                <Link href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
                                     <div className="flex flex-wrap mx-[12px] mt-0 flex-none w-1/6">
                                         <div>
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gNRChrnzLBNZ9pWKTKBeRdkV_e7kjo2k-aW33gO0R4NXrIApnxI18F0&s" alt="" className="h-auto max-w-full rounded-full"/>
@@ -61,8 +61,8 @@ export default function Message() {
                                         <div className="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
                                         <div className="text-muted small mt-1">15m ago</div>
                                     </div>
-                                </a>
-                                <a href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
+                                </Link>
+                                <Link href="" className="flex relative bg-white border border-[#dee6ed] text-[#6c757d] px-5 py-3 border-b border-x-0 border-t-0 mb-0 no-underline">
                                     <div className="flex flex-wrap mx-[12px] mt-0 flex-none w-1/6">
                                         <div>
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gNRChrnzLBNZ9pWKTKBeRdkV_e7kjo2k-aW33gO0R4NXrIApnxI18F0&s" alt="" className="h-auto max-w-full rounded-full"/>
@@ -73,10 +73,10 @@ export default function Message() {
                                         <div className="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
                                         <div className="text-muted small mt-1">15m ago</div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="block text-[0.75rem] p-2 text-center">
-                                <a href="#" className="text-muted">Show all messages</a>
+                                <Link href="#" className="text-muted">Show all messages</Link>
                             </div>
                         </div>
                     </>

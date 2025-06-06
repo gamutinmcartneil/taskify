@@ -38,36 +38,36 @@ export default function Sidebar() {
                             <ul className='pl-0 list-none'>
                                 <li className='flex text-xs py-1 px-6 pt-1.5' style={{ alignItems: "flex-end" }}>Navigation</li>
                                 <li>
-                                    <a className='flex cursor-pointer font-normal relative px-6 py-2.5 no-underline transition-colors duration-75 ease-in-out'>
+                                    <Link href="" className='flex cursor-pointer font-normal relative px-6 py-2.5 no-underline transition-colors duration-75 ease-in-out'>
                                         <div className='self-center'><MdOutlineFormatListBulleted className='h-[18px] w-[18px] mr-3' /></div>
                                         <span className='align-middle'>Dashboard</span>
                                         <span className='absolute right-5 top-3 text-white bg-blue-500 inline-block text-xs font-medium text-white leading-none text-center align-baseline rounded px-1.5 py-1 whitespace-nowrap'>5</span>
-                                    </a>
+                                    </Link>
                                     <ul>
-                                        <li className=''><a href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Default</a></li>
-                                        <li className=''><a href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Analytics</a></li>
-                                        <li className=''><a href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Saas</a></li>
+                                        <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Default</Link></li>
+                                        <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Analytics</Link></li>
+                                        <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Saas</Link></li>
                                     </ul>
                                 </li>
                                 <li className='flex text-xs py-1 px-6 pt-1.5' style={{ alignItems: "flex-end" }}>Apps</li>
                                 <li>
-                                    <a className='flex cursor-pointer font-normal relative px-6 py-2.5 no-underline transition-colors duration-75 ease-in-out'>
+                                    <Link className='flex cursor-pointer font-normal relative px-6 py-2.5 no-underline transition-colors duration-75 ease-in-out'>
                                         <div className='self-center'><MdOutlineFormatListBulleted className='h-[18px] w-[18px] mr-3' /></div>
                                         <span className='align-middle'>E-Commerce</span>
 
-                                    </a>
+                                    </Link>
                                     <ul>
                                         {/* <li className='flex'>
-                                            <a href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md w-full justify-between'>
+                                            <Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md w-full justify-between'>
                                                 <span>Product</span>
                                                 <span className='right-5 top-5 text-white bg-blue-500 inline-block text-xs font-medium text-white leading-none text-center align-baseline rounded px-1.5 py-1 whitespace-nowrap'>NEW</span>
-                                            </a>
+                                            </Link>
 
                                         </li> */}
                                         <li className=''>
-                                            <a href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Product Details</a>
+                                            <Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Product Details</Link>
                                         </li>
-                                        <li className=''><a href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Orders</a></li>
+                                        <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Orders</Link></li>
                                     </ul>
                                 </li>
                             </ul>
