@@ -8,7 +8,7 @@ import { HiOutlineExclamationCircle } from "react-icons/hi2";
 
 export default function AlertNotifications() {
 
-    const [alertDropdown, setalertDropdown] = useState(false);
+    const [alertDropdown] = useState(false);
 
     return (
         <>

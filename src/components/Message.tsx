@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { SlBubble } from "react-icons/sl";
 import { useState } from "react";
-import MessageList from "./MessageList";
 
 export default function Message() {
 

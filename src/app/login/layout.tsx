@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { CiFacebook } from "react-icons/ci";
 import { FcGoogle } from "react-icons/fc";
 import Button from './components/Button';
