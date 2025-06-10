@@ -1,24 +1,25 @@
 import Link from "next/link";
 import { SlBubble } from "react-icons/sl";
 import { useState } from "react";
+import { context } from "@/context/LayoutContext"
 
 export default function Message() {
 
-    const [ismessageDropdown] = useState(false);
+    const {toggleMessage} = context();
+    const {messageOpen} = context();
 
     return (
         <>
             <div className="relative">
                 <div className="relative">
-                    <Link href='#'>
+                    <Link href='#' onClick={toggleMessage} className="relative inline-block text-gray-600 hover:text-gray-900 focus:text-gray-900 transition-colors duration-200">
                         {/* onClick={() => { setMessageDropdown(!ismessageDropdown); setalertDropdown(false); setProfileDropdown(false); }} */}
                         <SlBubble className='size-6' />
-
                     </Link>
                     <span className="absolute block -right-2 -top-2 text-xs p-px bg-blue-600 w-[18px] h-[18px] text-center border rounded-[50%]">4</span>
                 </div>
 
-                {ismessageDropdown && (
+                {messageOpen && (
                     <>
                         {/* className={`absolute bg-[#fff] z-[1000] p-[0.5rem 0] min-h-[10rem] p-4 rounded-lg border border-gray-800 text-center 'min-w-[20rem] left-auto right-0'}`} */}
                         <div id="messageDropdown" className={`absolute z-[1000] min-w-[20rem] py-2 list-none text-left text-[0.825rem] text-[#6c757d] bg-white border border-[rgba(0,0,0,0.175)] rounded-[0.2rem] right-0 left-auto mt-[0.125rem] top-full'}`}>

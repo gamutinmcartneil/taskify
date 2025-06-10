@@ -7,10 +7,13 @@ import { IoLanguageOutline } from "react-icons/io5";
 import AlertNotifications from "./Notification";
 import Message from "./Message";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import { useSidebar } from '@/context/LayoutContext';
+import { context } from '@/context/LayoutContext';
 
 export default function Navbar() {
-   const { toggle } = useSidebar();
+
+   const { toggle } = context();
+
+
     return(
         <>
         <nav className={`flex justify-between relative px-4 pb-3 pt-4 shadow-[0_0px_32px_0px_rgba(41,48,66,.1)]`}>

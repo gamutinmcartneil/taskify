@@ -4,18 +4,20 @@ import { FaRegBellSlash } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
 import { HiOutlineExclamationCircle } from "react-icons/hi2";
+import { context } from '@/context/LayoutContext';
 
 
 export default function AlertNotifications() {
 
-    const [alertDropdown] = useState(false);
-
+    const [alertDropdown, setalertDropdown] = useState(false);
+    const {toggleAlert} = context();
+    const {alertOpen} = context();
     return (
         <>
             <div className="relative">
                 {/* onClick={() => { setalertDropdown(!alertDropdown); setMessageDropdown(false); setProfileDropdown(false); }} */}
-                <Link href=''><FaRegBellSlash className='size-6' /></Link>
-                {alertDropdown && (
+                <Link href='' onClick={toggleAlert} ><FaRegBellSlash className='size-6' /></Link>
+                {alertOpen && (
                     <>
                         {/*  className={`absolute bg-[#fff] z-[1000] p-[0.5rem 0] min-h-[10rem] p-4 rounded-lg border border-gray-800 text-center ${isResponsive ? '' : 'min-w-[20rem] left-auto right-0'}`} */}
                         <div id="alerDropdown" className={`absolute z-[1000] min-w-[20rem] py-2 list-none text-left text-[0.825rem] text-[#6c757d] bg-white border border-[rgba(0,0,0,0.175)] rounded-[0.2rem] right-0 left-auto mt-[0.125rem] top-full'}`}>
