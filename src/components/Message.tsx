@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { SlBubble } from "react-icons/sl";
-import { useState } from "react";
-import { context } from "@/context/LayoutContext"
+import { Context } from "@/context/LayoutContext"
 
 export default function Message() {
 
-    const {toggleMessage} = context();
-    const {messageOpen} = context();
+    const {toggleMessage} = Context();
+    const {messageOpen} = Context();
 
     return (
         <>

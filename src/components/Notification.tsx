@@ -2,16 +2,14 @@
 
 import { FaRegBellSlash } from "react-icons/fa";
 import Link from "next/link";
-import { useState } from "react";
 import { HiOutlineExclamationCircle } from "react-icons/hi2";
-import { context } from '@/context/LayoutContext';
+import { Context } from '@/context/LayoutContext';
 
 
 export default function AlertNotifications() {
 
-    const [alertDropdown, setalertDropdown] = useState(false);
-    const {toggleAlert} = context();
-    const {alertOpen} = context();
+    const {toggleAlert} = Context();
+    const {alertOpen} = Context();
     return (
         <>
             <div className="relative">

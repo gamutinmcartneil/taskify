@@ -3,12 +3,12 @@
 import React from 'react'
 import Link from "next/link";
 import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp, MdOutlineFormatListBulleted } from "react-icons/md";
-import { context } from '@/context/LayoutContext';
+import { Context } from '@/context/LayoutContext';
 
 
 export default function Sidebar() {
 
-    const { isOpen } = context();
+    const { isOpen } = Context();
     const [isOpenSubMenu, setIsOpenSubMenu] = React.useState(false);
 
     return (
@@ -36,9 +36,9 @@ export default function Sidebar() {
                                     {!isOpenSubMenu && (
                                         <>
                                             <ul>
-                                                <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Default</Link></li>
-                                                <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Analytics</Link></li>
-                                                <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Saas</Link></li>
+                                                <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Home</Link></li>
+                                                {/* <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Analytics</Link></li>
+                                                <li className=''><Link href="/" className='text-gray-300 text-md flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg light-white rounded-md ml-9'>Saas</Link></li> */}
                                             </ul>
                                         </>
                                     )}

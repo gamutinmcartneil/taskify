@@ -3,9 +3,23 @@
 import Link from "next/link";
 
 export default function LoginForm() {
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    
+    const formData = new FormData(event.currentTarget);
+    const username = formData.get("username") as string;
+    const password = formData.get("password") as string;
+    const rememberMe = formData.get("remember-me") === "on";
+
+    // Here you would typically handle the login logic, e.g., sending a request to your server
+    console.log("Username:", username);
+    console.log("Password:", password);
+    console.log("Remember Me:", rememberMe);
+  }
   
   return (
-    <form className='block class'>
+    <form className='block class' onSubmit={handleSubmit}>
       <div className='mb-3'>
         <label className='mb-2'>Username</label>
         {/* onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)} */}

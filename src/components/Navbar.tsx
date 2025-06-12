@@ -7,11 +7,11 @@ import { IoLanguageOutline } from "react-icons/io5";
 import AlertNotifications from "./Notification";
 import Message from "./Message";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import { context } from '@/context/LayoutContext';
+import { Context } from '@/context/LayoutContext';
 
 export default function Navbar() {
 
-   const { toggle } = context();
+   const { toggle } = Context();
 
 
     return(
