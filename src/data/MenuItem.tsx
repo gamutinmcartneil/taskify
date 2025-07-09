@@ -1,118 +1,73 @@
 import { CiBoxList } from "react-icons/ci";
+import { Module } from "@/data/Module"
 
-
-export const Menus = [
+export const MenuItem = [
     {
         header: "Navigation",
         titleItems: [
             {
-                title: "Dashboard",
-                titlelink: "",
-                titleIcon: <CiBoxList className="size-6" />,
-                link: '/',
-                submenu: true,
-                privilageGroup: ['admin','dev'],
-                submenuItems: [
+                ModuleId: 1,
+                ModuleCd: "",
+                ModuleDesc: 'Dashboard',
+                ModuleIcon: <CiBoxList className="size-6" />,
+                isSubMenu: true,
+                subMenuItem: [
                     {
-                        title: "Home",
-                        titlelink: "default",
-                        link: '/',
-                        access: ['admin']
+                        ModuleId: 2,
+                        ModuleCd: "home",
+                        ModuleDesc: 'Home',
+                    },
+                    {
+                        title: 'analytics',
+                        description: "Analytics",
+                        link: "/analytics",
                     },
                 ]
             },
         ]
     },
-
     // {
     //     header: "Apps",
     //     titleItems: [
     //         {
-    //             title: "Product",
-    //             titlelink: 'product',
-    //             titleIcon: <Squares2X2Icon className="size-6" />,
-    //             submenu: true,
-    //             privilageGroup: ['admin'],
-    //             submenuItems: [
+    //             title: "",
+    //             description: 'E-Commerce',
+    //             icon: <CiBoxList className="size-6" />,
+    //             isSubMenu: true,
+    //             privilageGroup: ['admin','dev'],
+    //             subMenuItem: [
     //                 {
-    //                     title: "Story",
-    //                     link: '/story',
-    //                     access: ['admin']
+    //                     title: '',
+    //                     description: "Product",
+    //                     link: "/product",
     //                 },
     //                 {
-    //                     title: "Plan",
-    //                     link: '/plan',
-    //                     access: ['admin']
-    //                 },
-    //                 {
-    //                     title: "Release",
-    //                     link: '/release',
-    //                     access: ['admin']
-    //                 },
-    //                 {
-    //                     title: "Roadmap",
-    //                     link: '/roadmap',
-    //                     access: ['admin']
-    //                 },
-    //                 {
-    //                     title: "Dynamics",
-    //                     link: '/dynamics',
-    //                     access: ['admin']
-    //                 },
-    //                 {
-    //                     title: "Docs",
-    //                     link: '/docs',
-    //                     access: ['admin']
-    //                 },
-    //                 {
-    //                     title: "Overview",
-    //                     link: '/overview',
-    //                     access: ['admin']
+    //                     title: 'analytics',
+    //                     description: "Product Details",
+    //                     link: "/product/details",
     //                 },
     //             ]
-
     //         },
     //         {
-    //             title: "Projects",
-    //             titlelink: 'project',
-    //             titleIcon: <Square3Stack3DIcon className="size-6" />,
-    //             submenu: true,
-    //             privilageGroup: ['admin'],
-    //             submenuItems: [
-    //                 {
-    //                     title: "Overview",
-    //                     link: '/overview',
-    //                     access: ['admin']
-    //                 },
-    //                 {
-    //                     title: "Details",
-    //                     link: '/details',
-    //                     access: ['admin']
-    //                 },
-    //             ]
-
+    //             title: "chat",
+    //             description: 'Chat',
+    //             link:'/chat',
+    //             icon: <CiBoxList className="size-6" />,
+    //             isSubMenu: false,
+    //             privilageGroup: ['admin','dev'],
     //         },
+    //     ]
+    // },
+    // {
+    //     header: "Project",
+    //     titleItems: [
     //         {
-    //             title: "Testing",
-    //             titlelink: "testing",
-    //             titleIcon: <BugAntIcon className="size-6" />,
-    //             submenu: true,
-    //             privilageGroup: ['admin', 'qa'],
-    //             submenuItems: [
-    //                 {
-    //                     title: "Bug",
-    //                     link: '/bug',
-    //                     access: ['admin','qa']
-    //                 },
-    //             ]
-
-    //         },
-    //         {
-    //             title: "Task",
-    //             titlelink: "task",
-    //             titleIcon: <PencilIcon className='size-6'/>,
-    //             submenu: false,
-    //             privilageGroup: ['admin', 'qa', 'developer'],
+    //             title: "task",
+    //             description: 'Task',
+    //             link:'/task',
+    //             icon: <CiBoxList className="size-6" />,
+    //             isSubMenu: false,
+    //             privilageGroup: ['admin','dev'],
     //         },
     //     ]
     // },

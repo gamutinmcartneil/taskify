@@ -1,5 +1,6 @@
 // app/page.tsx
 import Posts from '@/app/ui/post'
+import Loading from '@/components/Loading'
 import { Suspense } from 'react'
 
 async function getPosts() {
@@ -11,7 +12,7 @@ export default function Page() {
   const posts = getPosts() // Don't await, so it stays a Promise
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loading />}>
       <Posts posts={posts} />
     </Suspense>
   )
